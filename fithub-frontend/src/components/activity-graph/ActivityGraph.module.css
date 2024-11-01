@@ -1,0 +1,4 @@
+.monthsContainer {
+    display: flex;
+    flex-direction: row;
+}
