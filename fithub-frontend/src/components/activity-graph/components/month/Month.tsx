@@ -1,7 +1,13 @@
 import type { Month } from "./types/Month";
+import styles from "./Month.module.css";
 
 interface Props {
     month: Month;
+    year: number;
+}
+
+const getDaysInMonth = () => {
+
 }
 
 const Month: React.FC<Props> = (
@@ -11,7 +17,8 @@ const Month: React.FC<Props> = (
 ) => {
     return (
         <div>
-            <div>{month}</div>
+            <div className={styles.month}>{month}</div>
+            <div></div>
         </div>
     );
 }
