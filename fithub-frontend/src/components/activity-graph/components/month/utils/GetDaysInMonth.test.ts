@@ -27,7 +27,7 @@ describe("when calculating the number of days in a month", () => {
         });
 
         describe("and it's not a leap year", () => {
-            const result = getDaysInMonth(2, 2024);
+            const result = getDaysInMonth(2, 2023);
 
             it("should return 28", () => {
                 expect(result).toBe(28);
