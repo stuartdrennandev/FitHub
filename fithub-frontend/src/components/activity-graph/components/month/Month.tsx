@@ -1,7 +1,9 @@
 import type { Month } from "./types/Month";
 import styles from "./Month.module.css";
-import { useCallback, useMemo } from "react";
-import { getDaysInMonth } from "./utils/build-weeks/utils/GetDaysInMonth";
+import { useMemo } from "react";
+import { buildWeeks } from "./utils/build-weeks/BuildWeeks";
+import Week from "./components/week/Week";
+import { monthToString } from "./utils/month-to-string/MonthToString";
 
 interface Props {
     month: Month;
@@ -14,11 +16,28 @@ const Month: React.FC<Props> = (
         year
     }
 ) => {
+    const weeks = useMemo(() => {
+        return buildWeeks(month, year);
+    }, [month, year]);
+
+    const monthAsString = useMemo(() => {
+        return monthToString(month);
+    }, [month])
+
     return (
         <div>
-            <div className={styles.month}>{month}</div>
-            <div className={styles.daysContainer}>
-
+            <div className={styles.month}>{monthAsString}</div>
+            <div className={styles.monthContainer}>
+                {weeks.map((week, index) => {
+                    return (
+                        <Week
+                            key={`${week}-${index}`}
+                            week={week}
+                            month={month}
+                            year={year}
+                        />
+                    )
+                })}
             </div>
         </div>
     );

@@ -8,7 +8,7 @@ const App: React.FC = () => {
       <p className="callToAction">
         Inspired by GitHub. Get motivated by taking action.
       </p>
-      <ActivityGraph />
+      <ActivityGraph year={2024} />
     </>
   )
 }
