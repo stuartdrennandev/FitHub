@@ -1,0 +1,10 @@
+.month {
+    font-size: large;
+    padding: 4px;
+}
+
+.monthContainer {
+    display: flex;
+    flex-direction: row;
+    padding-right: 4px;
+}
