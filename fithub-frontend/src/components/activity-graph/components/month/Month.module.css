@@ -1,9 +1,12 @@
-.month {
-    font-size: large;
+.monthContainer {
     padding: 4px;
 }
 
-.monthContainer {
+.month {
+    font-size: smaller;
+}
+
+.weeksContainer {
     display: flex;
     flex-direction: row;
     padding-right: 4px;

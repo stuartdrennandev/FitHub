@@ -1,4 +1,5 @@
 import Month from "../../../../Month";
+import styles from "./Day.module.css";
 
 interface Props {
     day: number;
@@ -11,8 +12,11 @@ const Day: React.FC<Props> = (
         day
     }
 ) => {
+
+    const dayStyle = day === 1 ? styles.active : styles.inactive;
+
     return (
-        <div>{day}</div>
+        <div className={`${styles.day} ${dayStyle}`}></div>
     )
 }
 

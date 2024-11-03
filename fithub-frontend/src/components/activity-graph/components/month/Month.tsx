@@ -25,9 +25,9 @@ const Month: React.FC<Props> = (
     }, [month])
 
     return (
-        <div>
+        <div className={styles.monthContainer}>
             <div className={styles.month}>{monthAsString}</div>
-            <div className={styles.monthContainer}>
+            <div className={styles.weeksContainer}>
                 {weeks.map((week, index) => {
                     return (
                         <Week
