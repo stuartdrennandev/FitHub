@@ -23,7 +23,6 @@ const Day: React.FC<Props> = (
         <Tooltip title={dayActivityText}>
             <div className={`${styles.day} ${dayStyle}`}></div>
         </Tooltip>
-
     )
 }
 

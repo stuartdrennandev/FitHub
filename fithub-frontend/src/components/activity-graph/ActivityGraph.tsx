@@ -13,6 +13,7 @@ const ActivityGraph: React.FC<Props> = (
 ) => {
     return (
         <div className={styles.graphContainer}>
+            <div className={styles.yearLabel}>{year}</div>
             <div className={styles.monthsContainer}>
                 {months.map(month => (
                     <Month month={month} year={year} />
