@@ -8,3 +8,15 @@
 .callToAction {
   color: #888;
 }
+
+.splitView {
+  display: flex;
+  flex-direction: row;
+}
+
+.splitView>* {
+  flex: 1 1 50%;
+  outline: 1px solid lightgray;
+  border-radius: 2px;
+  margin: 4px;
+}
