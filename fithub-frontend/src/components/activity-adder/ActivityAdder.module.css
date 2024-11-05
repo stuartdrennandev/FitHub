@@ -1,0 +1,10 @@
+.title {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+}

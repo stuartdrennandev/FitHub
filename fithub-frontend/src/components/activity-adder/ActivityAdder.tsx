@@ -1,20 +1,42 @@
-import { DatePicker, Form, Input } from "antd";
+import { DatePicker, Form, Button, Input } from "antd";
+import styles from "./ActivityAdder.module.css";
 
 const ActivityAdder: React.FC = () => {
     return (
         <div>
-            <div>Add an activity</div>
+            <div className={styles.title}>Add an activity</div>
             <Form
-                labelCol={{ span: 4 }}
-                wrapperCol={{ span: 14 }}
+                wrapperCol={{ span: 16 }}
                 layout="horizontal"
-                style={{ maxWidth: 600 }}
+                className={styles.form}
+                onFinish={() => {}}
+                onFinishFailed={() => {}}
             >
-                <Form.Item label="Acivity name">
+                <Form.Item 
+                    name="summary"
+                    className={styles.formItem}
+                    label="Activity summary"
+                >
                     <Input />
                 </Form.Item>
-                <Form.Item label="Date">
+                <Form.Item 
+                    name="date"
+                    className={styles.formItem}
+                    label="Date" 
+                    rules={[{ required: true, message: "Please add date of activity"}]}
+                    required
+                >
                     <DatePicker />
+                </Form.Item>
+                <Form.Item
+                    className={styles.submitButton}
+                >
+                    <Button 
+                        type="primary" 
+                        htmlType="submit" 
+                    >
+                        Create activity
+                    </Button>
                 </Form.Item>
             </Form>
         </div>

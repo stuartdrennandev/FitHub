@@ -3,7 +3,7 @@
     flex-direction: column;
     outline: 1px solid lightgrey;
     border-radius: 2px;
-    padding: 4px;
+    padding: 8px;
 }
 
 .yearLabel {
