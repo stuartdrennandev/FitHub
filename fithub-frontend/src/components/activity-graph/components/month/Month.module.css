@@ -1,9 +1,10 @@
 .monthContainer {
-    padding: 4px;
+    padding: 0 4px;
 }
 
 .month {
     font-size: smaller;
+    margin-bottom: 2px;
 }
 
 .weeksContainer {
