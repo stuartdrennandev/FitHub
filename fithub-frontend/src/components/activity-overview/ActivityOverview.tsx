@@ -1,6 +1,8 @@
+import styles from "./ActivityOverview.module.css";
+
 const ActivityOverview: React.FC = () => {
     return (
-        <div>Overview</div>
+        <div className={styles.title}>Overview</div>
     )
 }
 
