@@ -1,0 +1,13 @@
+.day {
+    width: 10px;
+    height: 10px;
+    background-color: #ebedf0;
+    outline: 1px solid lightgray;
+    border-radius: 12%;
+    margin-bottom: 5px;
+}
+
+.active {
+    background-color: rgb(160, 232, 160);
+    outline: 1px solid rgb(86, 162, 86);
+}

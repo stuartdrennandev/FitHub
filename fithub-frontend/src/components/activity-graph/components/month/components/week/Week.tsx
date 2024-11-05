@@ -1,5 +1,6 @@
 import { Month } from "../../types/Month";
 import Day from "./components/day/Day";
+import styles from "./Week.module.css";
 
 interface Props {
     week: number[];
@@ -15,7 +16,7 @@ const Week: React.FC<Props> = (
     }
 ) => {
     return (
-        <div>
+        <div className={styles.week}>
             {week.map((day, index) => {
                 return (
                     <Day

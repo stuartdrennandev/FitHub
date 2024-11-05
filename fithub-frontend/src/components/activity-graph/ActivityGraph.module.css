@@ -1,6 +1,17 @@
 .graphContainer {
     display: flex;
     flex-direction: column;
+    outline: 1px solid lightgrey;
+    border-radius: 2px;
+    padding: 4px;
+}
+
+.yearLabel {
+    display: flex;
+    flex-direction: start;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 4px;
 }
 
 .monthsContainer {
