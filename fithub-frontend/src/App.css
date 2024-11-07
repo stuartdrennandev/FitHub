@@ -12,12 +12,12 @@
 .splitView {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 12px;
 }
 
 .splitView>* {
   flex: 1 1 50%;
-  margin-top: 8px;
+  margin-top: 12px;
   padding: 8px;
   outline: 1px solid lightgray;
   border-radius: 2px;
